@@ -47,7 +47,7 @@ group by release_year;
 
 --HAVING 
 --This means that if you want to filter based on the result of an aggregate function, you need another way! That's where the HAVING clause comes in.
--Magagamit lang to pag gusto mag filter ng result
+--Magagamit lang to pag gusto mag filter ng result
 
 --Time to practice using ORDER BY, GROUP BY and HAVING together.
 
@@ -104,7 +104,14 @@ order by country
 -- limit to only show 5 results
 limit 5
 
-
+--SEQUENCE
+SELECT
+FROM
+WHERE -- cannot be used with aggregate functions
+GROUP BY --Aggregate Functions - count(), max(), min(), sum(), avg()
+HAVING  -- used aggregate functions
+ORDER BY
+LIMIT
 
 
 

@@ -30,7 +30,17 @@ FROM films
 WHERE release_year >= 2000 AND release_year <= 2012
 --WHERE release_year BETWEEN 2000 AND 2012;
 
---AS aliasing
+--AS aliasing - Aliases are helpful for making results more readable!
+
+--Bad sample
+SELECT MAX(budget), MAX(duration)
+FROM films;
+--For example, in the above example we could use aliases to make the result clearer:
+SELECT MAX(budget) AS max_budget,
+       MAX(duration) AS max_duration
+FROM films;
+
+
 --Get the title and net profit (the amount a film grossed, minus its budget) for all films. Alias the net profit as net_profit.
 SELECT title, (gross- budget) AS net_profit
 FROM films;
